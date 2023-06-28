@@ -225,7 +225,7 @@ class LTIConfig
         $this->icon = plugin_dir_url(__FILE__) . 'icon.png';
         $this->launch_url = site_url();
         $this->platform = "canvas.instructure.com";
-        $this->tool_id = "princeton_wp_lti_tool";//strtolower(str_replace(" ", "_", get_bloginfo('name')));
+        $this->tool_id = "princeton_wp_lti_tool";
     }
 
     function display()
