@@ -8,22 +8,22 @@
     http://www.imsglobal.org/xsd/imsbasiclti_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imsbasiclti_v1p0.xsd
     http://www.imsglobal.org/xsd/imslticm_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticm_v1p0.xsd
     http://www.imsglobal.org/xsd/imslticp_v1p0 http://www.imsglobal.org/xsd/lti/ltiv1p0/imslticp_v1p0.xsd">
-    <blti:title>Advisiing 2023</blti:title>
-    <blti:description>This is the description.</blti:description>
-    <blti:icon>https://etcpanel.princeton.edu/LTI/puam/images/puam-icon.png</blti:icon>
-    <blti:launch_url>https://onlineprinceton.princeton.edu/advising_2023/</blti:launch_url>
-    <blti:extensions platform="canvas.instructure.com">
-      <lticm:property name="tool_id">advising2023</lticm:property>
+    <blti:title>{title}</blti:title>
+    <blti:description>{description}</blti:description>
+    <blti:icon>{icon}</blti:icon>
+    <blti:launch_url>{launch_url}</blti:launch_url>
+    <blti:extensions platform="{platform}">
+      <lticm:property name="tool_id">{tool_id}</lticm:property>
       <lticm:property name="privacy_level">public</lticm:property>
       <lticm:property name="domain">www.princeton.edu</lticm:property>
-      <lticm:options name="course_navigation">
-        <lticm:property name="url">https://onlineprinceton.princeton.edu/advising_2023/</lticm:property>
-        <lticm:property name="text">Advisiing 2023</lticm:property>
+     <lticm:options name="course_navigation">
+        <lticm:property name="url">{launch_url}</lticm:property>
+        <lticm:property name="text">{title}</lticm:property>
         <lticm:property name="visibility">public</lticm:property>
         <lticm:property name="default">enabled</lticm:property>
         <lticm:property name="enabled">true</lticm:property>
         <lticm:property name="windowTarget">_blank</lticm:property>
-      </lticm:options>       
+      </lticm:options> 
     </blti:extensions>
     <cartridge_bundle identifierref="BLTI001_Bundle"/>
     <cartridge_icon identifierref="BLTI001_Icon"/>
