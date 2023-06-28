@@ -13,17 +13,13 @@ class WPLTI
 {
     function __construct()
     {
-        add_action('init', array( $this, 'url_rewrite') );
         add_action('init', array( $this, 'display_config') );
         add_action('init', array( $this, 'check_lti') );
 
         // Register and define the settings page
         add_action('admin_init', [$this, 'admin_init']);
     }
-    
-    function url_rewrite() {
-        add_rewrite_rule( 'lticonfig[/]?$', 'index.php?lticonfig', 'top' );
-    }
+
 
     /**********************************
      *  After the plugins have been loaded, check lti
