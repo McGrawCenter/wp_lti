@@ -224,7 +224,7 @@ class LTIConfig
         $this->description = "An LTI connection to the " . get_bloginfo('name') . " website on Wordpress";
         $this->icon = plugin_dir_url(__FILE__) . 'icon.png';
         $this->launch_url = site_url();
-        $this->domain = $_SERVER['SERVER_NAME'];
+        $this->domain = "domain:".$_SERVER['SERVER_NAME'];
         $this->platform = "canvas.instructure.com";
         $this->tool_id = "princeton_wp_lti_tool";
     }
